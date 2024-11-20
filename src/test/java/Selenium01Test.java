@@ -15,6 +15,7 @@ visualizamos o acesso a web e por fim, encerramos o acesso.
          */
 
         ChromeOptions options = new ChromeOptions();
+        options.addArguments("--remote-allow-origins=*");
         WebDriver driver = new ChromeDriver(options);
         driver.get("https://vsr.testbench.com/login");
     }
